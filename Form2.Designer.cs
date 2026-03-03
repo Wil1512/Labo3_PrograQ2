@@ -1,0 +1,183 @@
+﻿using System.Windows.Forms;
+
+namespace Labo4_PrograQ2
+{
+    partial class Ecran_Principal : Form
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.contrôlesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuListe = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuProgression = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuQuitter = new System.Windows.Forms.ToolStripMenuItem();
+            this.applicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuEditeur = new System.Windows.Forms.ToolStripMenuItem();
+            this.malwareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuAPropos = new System.Windows.Forms.ToolStripMenuItem();
+            this.Horloge = new System.Windows.Forms.Button();
+            this.ClavierSouris = new System.Windows.Forms.Button();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.contrôlesToolStripMenuItem,
+            this.applicationsToolStripMenuItem,
+            this.aideToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // contrôlesToolStripMenuItem
+            // 
+            this.contrôlesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuListe,
+            this.menuProgression,
+            this.menuQuitter});
+            this.contrôlesToolStripMenuItem.Name = "contrôlesToolStripMenuItem";
+            this.contrôlesToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.contrôlesToolStripMenuItem.Text = "Contrôles";
+            // 
+            // menuListe
+            // 
+            this.menuListe.Name = "menuListe";
+            this.menuListe.Size = new System.Drawing.Size(182, 22);
+            this.menuListe.Text = "Liste";
+            this.menuListe.Click += new System.EventHandler(this.menuListe_Click);
+            // 
+            // menuProgression
+            // 
+            this.menuProgression.Name = "menuProgression";
+            this.menuProgression.Size = new System.Drawing.Size(182, 22);
+            this.menuProgression.Text = "Barre de progression";
+            this.menuProgression.Click += new System.EventHandler(this.menuProgression_Click);
+            // 
+            // menuQuitter
+            // 
+            this.menuQuitter.Name = "menuQuitter";
+            this.menuQuitter.Size = new System.Drawing.Size(182, 22);
+            this.menuQuitter.Text = "Quitter";
+            this.menuQuitter.Click += new System.EventHandler(this.menuQuitter_Click);
+            // 
+            // applicationsToolStripMenuItem
+            // 
+            this.applicationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuEditeur,
+            this.malwareToolStripMenuItem});
+            this.applicationsToolStripMenuItem.Name = "applicationsToolStripMenuItem";
+            this.applicationsToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.applicationsToolStripMenuItem.Text = "Applications";
+            // 
+            // menuEditeur
+            // 
+            this.menuEditeur.Name = "menuEditeur";
+            this.menuEditeur.Size = new System.Drawing.Size(119, 22);
+            this.menuEditeur.Text = "Editeur";
+            this.menuEditeur.Click += new System.EventHandler(this.menuEditeur_Click);
+            // 
+            // malwareToolStripMenuItem
+            // 
+            this.malwareToolStripMenuItem.Name = "malwareToolStripMenuItem";
+            this.malwareToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.malwareToolStripMenuItem.Text = "Malware";
+            this.malwareToolStripMenuItem.Click += new System.EventHandler(this.malwareToolStripMenuItem_Click);
+            // 
+            // aideToolStripMenuItem
+            // 
+            this.aideToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuAPropos});
+            this.aideToolStripMenuItem.Name = "aideToolStripMenuItem";
+            this.aideToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.aideToolStripMenuItem.Text = "Aide";
+            // 
+            // menuAPropos
+            // 
+            this.menuAPropos.Name = "menuAPropos";
+            this.menuAPropos.Size = new System.Drawing.Size(111, 22);
+            this.menuAPropos.Text = "Propos";
+            this.menuAPropos.Click += new System.EventHandler(this.menuAPropos_Click);
+            // 
+            // Horloge
+            // 
+            this.Horloge.Location = new System.Drawing.Point(219, 126);
+            this.Horloge.Name = "Horloge";
+            this.Horloge.Size = new System.Drawing.Size(100, 42);
+            this.Horloge.TabIndex = 1;
+            this.Horloge.Text = "Horloge";
+            this.Horloge.UseVisualStyleBackColor = true;
+            this.Horloge.Click += new System.EventHandler(this.Horloge_Click);
+            // 
+            // ClavierSouris
+            // 
+            this.ClavierSouris.Location = new System.Drawing.Point(379, 126);
+            this.ClavierSouris.Name = "ClavierSouris";
+            this.ClavierSouris.Size = new System.Drawing.Size(99, 41);
+            this.ClavierSouris.TabIndex = 2;
+            this.ClavierSouris.Text = "ClavierSouris";
+            this.ClavierSouris.UseVisualStyleBackColor = true;
+            this.ClavierSouris.Click += new System.EventHandler(this.ClavierSouris_Click);
+            // 
+            // Ecran_Principal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ClavierSouris);
+            this.Controls.Add(this.Horloge);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Ecran_Principal";
+            this.Text = "Ecran_Principal";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ecran_Principal_FormClosing);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem contrôlesToolStripMenuItem;
+        private ToolStripMenuItem menuListe;
+        private ToolStripMenuItem menuProgression;
+        private ToolStripMenuItem menuQuitter;
+        private ToolStripMenuItem applicationsToolStripMenuItem;
+        private ToolStripMenuItem aideToolStripMenuItem;
+        private ToolStripMenuItem menuAPropos;
+        private ToolStripMenuItem menuEditeur;
+        private ToolStripMenuItem malwareToolStripMenuItem;
+        private Button Horloge;
+        private Button ClavierSouris;
+    }
+}
