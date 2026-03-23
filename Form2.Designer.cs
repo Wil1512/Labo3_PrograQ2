@@ -42,6 +42,7 @@ namespace Labo4_PrograQ2
             this.menuAPropos = new System.Windows.Forms.ToolStripMenuItem();
             this.Horloge = new System.Windows.Forms.Button();
             this.ClavierSouris = new System.Windows.Forms.Button();
+            this.btnFicExplorateur = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -146,11 +147,22 @@ namespace Labo4_PrograQ2
             this.ClavierSouris.UseVisualStyleBackColor = true;
             this.ClavierSouris.Click += new System.EventHandler(this.ClavierSouris_Click);
             // 
+            // btnFicExplorateur
+            // 
+            this.btnFicExplorateur.Location = new System.Drawing.Point(219, 202);
+            this.btnFicExplorateur.Name = "btnFicExplorateur";
+            this.btnFicExplorateur.Size = new System.Drawing.Size(99, 41);
+            this.btnFicExplorateur.TabIndex = 3;
+            this.btnFicExplorateur.Text = "EcranExplorateur";
+            this.btnFicExplorateur.UseVisualStyleBackColor = true;
+            this.btnFicExplorateur.Click += new System.EventHandler(this.btnFicExplorateur_Click);
+            // 
             // Ecran_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFicExplorateur);
             this.Controls.Add(this.ClavierSouris);
             this.Controls.Add(this.Horloge);
             this.Controls.Add(this.menuStrip1);
@@ -179,5 +191,6 @@ namespace Labo4_PrograQ2
         private ToolStripMenuItem malwareToolStripMenuItem;
         private Button Horloge;
         private Button ClavierSouris;
+        private Button btnFicExplorateur;
     }
 }

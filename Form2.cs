@@ -89,5 +89,12 @@ namespace Labo4_PrograQ2
             f.Show();
             this.Hide();
         }
+
+        private void btnFicExplorateur_Click(object sender, EventArgs e)
+        {
+            FicExplorateur f = new FicExplorateur();
+            f.Show();
+            this.Hide();
+        }
     }
 }
