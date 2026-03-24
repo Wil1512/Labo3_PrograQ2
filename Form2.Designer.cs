@@ -43,6 +43,7 @@ namespace Labo4_PrograQ2
             this.Horloge = new System.Windows.Forms.Button();
             this.ClavierSouris = new System.Windows.Forms.Button();
             this.btnFicExplorateur = new System.Windows.Forms.Button();
+            this.btnGPS = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -157,11 +158,22 @@ namespace Labo4_PrograQ2
             this.btnFicExplorateur.UseVisualStyleBackColor = true;
             this.btnFicExplorateur.Click += new System.EventHandler(this.btnFicExplorateur_Click);
             // 
+            // btnGPS
+            // 
+            this.btnGPS.Location = new System.Drawing.Point(382, 207);
+            this.btnGPS.Name = "btnGPS";
+            this.btnGPS.Size = new System.Drawing.Size(95, 35);
+            this.btnGPS.TabIndex = 4;
+            this.btnGPS.Text = "PartieGps";
+            this.btnGPS.UseVisualStyleBackColor = true;
+            this.btnGPS.Click += new System.EventHandler(this.btnGPS_Click);
+            // 
             // Ecran_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGPS);
             this.Controls.Add(this.btnFicExplorateur);
             this.Controls.Add(this.ClavierSouris);
             this.Controls.Add(this.Horloge);
@@ -192,5 +204,6 @@ namespace Labo4_PrograQ2
         private Button Horloge;
         private Button ClavierSouris;
         private Button btnFicExplorateur;
+        private Button btnGPS;
     }
 }

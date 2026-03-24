@@ -96,5 +96,13 @@ namespace Labo4_PrograQ2
             f.Show();
             this.Hide();
         }
+
+        
+        private void btnGPS_Click(object sender, EventArgs e)
+        {
+            ProjetGPS f = new ProjetGPS();
+            f.Show();
+            this.Hide();
+        }
     }
 }
