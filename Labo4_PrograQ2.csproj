@@ -74,6 +74,12 @@
     <Compile Include="EcranAPropos.Designer.cs">
       <DependentUpon>EcranAPropos.cs</DependentUpon>
     </Compile>
+    <Compile Include="EcranBDDirect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EcranBDDirect.Designer.cs">
+      <DependentUpon>EcranBDDirect.cs</DependentUpon>
+    </Compile>
     <Compile Include="EcranClavierSouris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EcranAPropos.resx">
       <DependentUpon>EcranAPropos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EcranBDDirect.resx">
+      <DependentUpon>EcranBDDirect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EcranClavierSouris.resx">
       <DependentUpon>EcranClavierSouris.cs</DependentUpon>
