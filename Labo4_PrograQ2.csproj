@@ -168,6 +168,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoutonColore.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="EcranAPropos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -300,6 +303,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BoutonColore.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

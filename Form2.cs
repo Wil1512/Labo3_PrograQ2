@@ -112,5 +112,12 @@ namespace Labo4_PrograQ2
             this.Hide();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BoutonColore f = new BoutonColore();
+            f.Show();
+            this.Hide();
+        }
     }
 }

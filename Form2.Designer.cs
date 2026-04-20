@@ -45,6 +45,8 @@ namespace Labo4_PrograQ2
             this.btnFicExplorateur = new System.Windows.Forms.Button();
             this.btnGPS = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.boutonColore1 = new Labo4_PrograQ2.BoutonColore();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,9 +133,9 @@ namespace Labo4_PrograQ2
             // 
             // Horloge
             // 
-            this.Horloge.Location = new System.Drawing.Point(164, 117);
+            this.Horloge.Location = new System.Drawing.Point(41, 116);
             this.Horloge.Name = "Horloge";
-            this.Horloge.Size = new System.Drawing.Size(100, 42);
+            this.Horloge.Size = new System.Drawing.Size(150, 42);
             this.Horloge.TabIndex = 1;
             this.Horloge.Text = "Horloge";
             this.Horloge.UseVisualStyleBackColor = true;
@@ -141,9 +143,9 @@ namespace Labo4_PrograQ2
             // 
             // ClavierSouris
             // 
-            this.ClavierSouris.Location = new System.Drawing.Point(324, 117);
+            this.ClavierSouris.Location = new System.Drawing.Point(231, 117);
             this.ClavierSouris.Name = "ClavierSouris";
-            this.ClavierSouris.Size = new System.Drawing.Size(99, 41);
+            this.ClavierSouris.Size = new System.Drawing.Size(150, 41);
             this.ClavierSouris.TabIndex = 2;
             this.ClavierSouris.Text = "ClavierSouris";
             this.ClavierSouris.UseVisualStyleBackColor = true;
@@ -151,9 +153,9 @@ namespace Labo4_PrograQ2
             // 
             // btnFicExplorateur
             // 
-            this.btnFicExplorateur.Location = new System.Drawing.Point(164, 193);
+            this.btnFicExplorateur.Location = new System.Drawing.Point(41, 193);
             this.btnFicExplorateur.Name = "btnFicExplorateur";
-            this.btnFicExplorateur.Size = new System.Drawing.Size(99, 41);
+            this.btnFicExplorateur.Size = new System.Drawing.Size(150, 41);
             this.btnFicExplorateur.TabIndex = 3;
             this.btnFicExplorateur.Text = "EcranExplorateur";
             this.btnFicExplorateur.UseVisualStyleBackColor = true;
@@ -161,9 +163,9 @@ namespace Labo4_PrograQ2
             // 
             // btnGPS
             // 
-            this.btnGPS.Location = new System.Drawing.Point(327, 198);
+            this.btnGPS.Location = new System.Drawing.Point(231, 193);
             this.btnGPS.Name = "btnGPS";
-            this.btnGPS.Size = new System.Drawing.Size(95, 35);
+            this.btnGPS.Size = new System.Drawing.Size(150, 40);
             this.btnGPS.TabIndex = 4;
             this.btnGPS.Text = "PartieGps";
             this.btnGPS.UseVisualStyleBackColor = true;
@@ -171,19 +173,44 @@ namespace Labo4_PrograQ2
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(473, 117);
+            this.button1.Location = new System.Drawing.Point(436, 117);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 40);
+            this.button1.Size = new System.Drawing.Size(150, 40);
             this.button1.TabIndex = 5;
             this.button1.Text = "BD-Direct";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(436, 195);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(150, 39);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "BoutonColore";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // boutonColore1
+            // 
+            this.boutonColore1.CouleurDroite = System.Drawing.Color.DarkBlue;
+            this.boutonColore1.CouleurGauche = System.Drawing.Color.LightBlue;
+            this.boutonColore1.Location = new System.Drawing.Point(41, 265);
+            this.boutonColore1.Name = "boutonColore1";
+            this.boutonColore1.Size = new System.Drawing.Size(150, 40);
+            this.boutonColore1.TabIndex = 7;
+            this.boutonColore1.Text = "boutonColore1";
+            this.boutonColore1.TranspDroite = 255;
+            this.boutonColore1.TranspGauche = 255;
+            this.boutonColore1.UseVisualStyleBackColor = true;
             // 
             // Ecran_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.boutonColore1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnGPS);
             this.Controls.Add(this.btnFicExplorateur);
@@ -218,5 +245,7 @@ namespace Labo4_PrograQ2
         private Button btnFicExplorateur;
         private Button btnGPS;
         private Button button1;
+        private Button button2;
+        private BoutonColore boutonColore1;
     }
 }
