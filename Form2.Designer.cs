@@ -44,6 +44,7 @@ namespace Labo4_PrograQ2
             this.ClavierSouris = new System.Windows.Forms.Button();
             this.btnFicExplorateur = new System.Windows.Forms.Button();
             this.btnGPS = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,7 +131,7 @@ namespace Labo4_PrograQ2
             // 
             // Horloge
             // 
-            this.Horloge.Location = new System.Drawing.Point(219, 126);
+            this.Horloge.Location = new System.Drawing.Point(164, 117);
             this.Horloge.Name = "Horloge";
             this.Horloge.Size = new System.Drawing.Size(100, 42);
             this.Horloge.TabIndex = 1;
@@ -140,7 +141,7 @@ namespace Labo4_PrograQ2
             // 
             // ClavierSouris
             // 
-            this.ClavierSouris.Location = new System.Drawing.Point(379, 126);
+            this.ClavierSouris.Location = new System.Drawing.Point(324, 117);
             this.ClavierSouris.Name = "ClavierSouris";
             this.ClavierSouris.Size = new System.Drawing.Size(99, 41);
             this.ClavierSouris.TabIndex = 2;
@@ -150,7 +151,7 @@ namespace Labo4_PrograQ2
             // 
             // btnFicExplorateur
             // 
-            this.btnFicExplorateur.Location = new System.Drawing.Point(219, 202);
+            this.btnFicExplorateur.Location = new System.Drawing.Point(164, 193);
             this.btnFicExplorateur.Name = "btnFicExplorateur";
             this.btnFicExplorateur.Size = new System.Drawing.Size(99, 41);
             this.btnFicExplorateur.TabIndex = 3;
@@ -160,7 +161,7 @@ namespace Labo4_PrograQ2
             // 
             // btnGPS
             // 
-            this.btnGPS.Location = new System.Drawing.Point(382, 207);
+            this.btnGPS.Location = new System.Drawing.Point(327, 198);
             this.btnGPS.Name = "btnGPS";
             this.btnGPS.Size = new System.Drawing.Size(95, 35);
             this.btnGPS.TabIndex = 4;
@@ -168,11 +169,22 @@ namespace Labo4_PrograQ2
             this.btnGPS.UseVisualStyleBackColor = true;
             this.btnGPS.Click += new System.EventHandler(this.btnGPS_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(473, 117);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 40);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "BD-Direct";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Ecran_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnGPS);
             this.Controls.Add(this.btnFicExplorateur);
             this.Controls.Add(this.ClavierSouris);
@@ -205,5 +217,6 @@ namespace Labo4_PrograQ2
         private Button ClavierSouris;
         private Button btnFicExplorateur;
         private Button btnGPS;
+        private Button button1;
     }
 }

@@ -54,6 +54,7 @@
             this.bConsulter.TabIndex = 1;
             this.bConsulter.Text = "Consulter";
             this.bConsulter.UseVisualStyleBackColor = true;
+            this.bConsulter.Click += new System.EventHandler(this.bConsulter_Click);
             // 
             // bDenombrer
             // 
@@ -63,6 +64,7 @@
             this.bDenombrer.TabIndex = 2;
             this.bDenombrer.Text = "Denombrer";
             this.bDenombrer.UseVisualStyleBackColor = true;
+            this.bDenombrer.Click += new System.EventHandler(this.bDenombrer_Click);
             // 
             // bAjouter
             // 
@@ -72,6 +74,7 @@
             this.bAjouter.TabIndex = 3;
             this.bAjouter.Text = "Ajouter";
             this.bAjouter.UseVisualStyleBackColor = true;
+            this.bAjouter.Click += new System.EventHandler(this.bAjouter_Click);
             // 
             // lbPrenom
             // 
