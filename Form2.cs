@@ -119,5 +119,12 @@ namespace Labo4_PrograQ2
             f.Show();
             this.Hide();
         }
+
+        private void btnDBLocalCouche_Click(object sender, EventArgs e)
+        {
+            DataAccessLayer f = new DataAccessLayer();
+            f.Show();
+            this.Hide();
+        }
     }
 }

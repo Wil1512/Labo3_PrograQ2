@@ -47,6 +47,7 @@ namespace Labo4_PrograQ2
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.boutonColore1 = new Labo4_PrograQ2.BoutonColore();
+            this.btnDBLocalCouche = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -204,11 +205,22 @@ namespace Labo4_PrograQ2
             this.boutonColore1.TranspGauche = 255;
             this.boutonColore1.UseVisualStyleBackColor = true;
             // 
+            // btnDBLocalCouche
+            // 
+            this.btnDBLocalCouche.Location = new System.Drawing.Point(231, 261);
+            this.btnDBLocalCouche.Name = "btnDBLocalCouche";
+            this.btnDBLocalCouche.Size = new System.Drawing.Size(149, 43);
+            this.btnDBLocalCouche.TabIndex = 8;
+            this.btnDBLocalCouche.Text = "DBLocalCouche";
+            this.btnDBLocalCouche.UseVisualStyleBackColor = true;
+            this.btnDBLocalCouche.Click += new System.EventHandler(this.btnDBLocalCouche_Click);
+            // 
             // Ecran_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDBLocalCouche);
             this.Controls.Add(this.boutonColore1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -247,5 +259,6 @@ namespace Labo4_PrograQ2
         private Button button1;
         private Button button2;
         private BoutonColore boutonColore1;
+        private Button btnDBLocalCouche;
     }
 }

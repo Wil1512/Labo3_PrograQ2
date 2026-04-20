@@ -171,6 +171,14 @@
     <Compile Include="BoutonColore.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Client.cs" />
+    <Compile Include="ClientDataAccessLayer.cs" />
+    <Compile Include="DataAccessLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataAccessLayer.Designer.cs">
+      <DependentUpon>DataAccessLayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="EcranAPropos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +253,9 @@
       <DependentUpon>ProjetSpirographe.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DataAccessLayer.resx">
+      <DependentUpon>DataAccessLayer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EcranAPropos.resx">
       <DependentUpon>EcranAPropos.cs</DependentUpon>
     </EmbeddedResource>
