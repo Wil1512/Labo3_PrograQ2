@@ -46,8 +46,9 @@ namespace Labo4_PrograQ2
             this.btnGPS = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.boutonColore1 = new Labo4_PrograQ2.BoutonColore();
             this.btnDBLocalCouche = new System.Windows.Forms.Button();
+            this.boutonColore1 = new Labo4_PrograQ2.BoutonColore();
+            this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,7 +135,7 @@ namespace Labo4_PrograQ2
             // 
             // Horloge
             // 
-            this.Horloge.Location = new System.Drawing.Point(41, 116);
+            this.Horloge.Location = new System.Drawing.Point(113, 120);
             this.Horloge.Name = "Horloge";
             this.Horloge.Size = new System.Drawing.Size(150, 42);
             this.Horloge.TabIndex = 1;
@@ -144,7 +145,7 @@ namespace Labo4_PrograQ2
             // 
             // ClavierSouris
             // 
-            this.ClavierSouris.Location = new System.Drawing.Point(231, 117);
+            this.ClavierSouris.Location = new System.Drawing.Point(303, 121);
             this.ClavierSouris.Name = "ClavierSouris";
             this.ClavierSouris.Size = new System.Drawing.Size(150, 41);
             this.ClavierSouris.TabIndex = 2;
@@ -154,7 +155,7 @@ namespace Labo4_PrograQ2
             // 
             // btnFicExplorateur
             // 
-            this.btnFicExplorateur.Location = new System.Drawing.Point(41, 193);
+            this.btnFicExplorateur.Location = new System.Drawing.Point(113, 197);
             this.btnFicExplorateur.Name = "btnFicExplorateur";
             this.btnFicExplorateur.Size = new System.Drawing.Size(150, 41);
             this.btnFicExplorateur.TabIndex = 3;
@@ -164,7 +165,7 @@ namespace Labo4_PrograQ2
             // 
             // btnGPS
             // 
-            this.btnGPS.Location = new System.Drawing.Point(231, 193);
+            this.btnGPS.Location = new System.Drawing.Point(303, 197);
             this.btnGPS.Name = "btnGPS";
             this.btnGPS.Size = new System.Drawing.Size(150, 40);
             this.btnGPS.TabIndex = 4;
@@ -174,7 +175,7 @@ namespace Labo4_PrograQ2
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(436, 117);
+            this.button1.Location = new System.Drawing.Point(508, 121);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 40);
             this.button1.TabIndex = 5;
@@ -184,7 +185,7 @@ namespace Labo4_PrograQ2
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(436, 195);
+            this.button2.Location = new System.Drawing.Point(508, 199);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 39);
             this.button2.TabIndex = 6;
@@ -192,11 +193,21 @@ namespace Labo4_PrograQ2
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnDBLocalCouche
+            // 
+            this.btnDBLocalCouche.Location = new System.Drawing.Point(303, 265);
+            this.btnDBLocalCouche.Name = "btnDBLocalCouche";
+            this.btnDBLocalCouche.Size = new System.Drawing.Size(149, 43);
+            this.btnDBLocalCouche.TabIndex = 8;
+            this.btnDBLocalCouche.Text = "DBLocalCouche";
+            this.btnDBLocalCouche.UseVisualStyleBackColor = true;
+            this.btnDBLocalCouche.Click += new System.EventHandler(this.btnDBLocalCouche_Click);
+            // 
             // boutonColore1
             // 
             this.boutonColore1.CouleurDroite = System.Drawing.Color.DarkBlue;
             this.boutonColore1.CouleurGauche = System.Drawing.Color.LightBlue;
-            this.boutonColore1.Location = new System.Drawing.Point(41, 265);
+            this.boutonColore1.Location = new System.Drawing.Point(113, 269);
             this.boutonColore1.Name = "boutonColore1";
             this.boutonColore1.Size = new System.Drawing.Size(150, 40);
             this.boutonColore1.TabIndex = 7;
@@ -205,21 +216,22 @@ namespace Labo4_PrograQ2
             this.boutonColore1.TranspGauche = 255;
             this.boutonColore1.UseVisualStyleBackColor = true;
             // 
-            // btnDBLocalCouche
+            // button3
             // 
-            this.btnDBLocalCouche.Location = new System.Drawing.Point(231, 261);
-            this.btnDBLocalCouche.Name = "btnDBLocalCouche";
-            this.btnDBLocalCouche.Size = new System.Drawing.Size(149, 43);
-            this.btnDBLocalCouche.TabIndex = 8;
-            this.btnDBLocalCouche.Text = "DBLocalCouche";
-            this.btnDBLocalCouche.UseVisualStyleBackColor = true;
-            this.btnDBLocalCouche.Click += new System.EventHandler(this.btnDBLocalCouche_Click);
+            this.button3.Location = new System.Drawing.Point(510, 269);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(147, 39);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "FicIntegration";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Ecran_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnDBLocalCouche);
             this.Controls.Add(this.boutonColore1);
             this.Controls.Add(this.button2);
@@ -260,5 +272,6 @@ namespace Labo4_PrograQ2
         private Button button2;
         private BoutonColore boutonColore1;
         private Button btnDBLocalCouche;
+        private Button button3;
     }
 }

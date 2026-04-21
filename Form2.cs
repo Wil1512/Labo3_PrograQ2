@@ -126,5 +126,12 @@ namespace Labo4_PrograQ2
             f.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FicIntegration f = new FicIntegration();
+            f.Show();
+            this.Hide();
+        }
     }
 }
